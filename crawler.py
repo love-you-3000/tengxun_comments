@@ -3,7 +3,6 @@ from urllib.parse import urlencode
 import  json
 import re
 from tqdm import *
-import time
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
@@ -39,5 +38,4 @@ for i in tqdm(range(page)):
         print(err)
 
 f.close()
-time.sleep(1)
 print('写入文件完成。')
